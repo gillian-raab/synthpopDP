@@ -7,11 +7,15 @@ Here is some R code to get you started.
 
 #########################################################
 library(synthpop)
+
 test <- SD2011[,c("sex","agegr","socprof","marital")]
+
 set.seed(56342)
+
 ############ synthesise non DP
 syncatall <- syn(test, method= "catall", catall.priorn = 10, catall.epsilon = 0)
 synipf <- syn(test, method= "ipf", ipf.priorn = 10, ipf.epsilon = 0)
+
 ############ synthesise  DP
 syncatallDP <- syn(test, method= "catall", catall.priorn = 10, catall.epsilon = .1)
 synipfDP <- syn(test, method= "ipf", ipf.priorn = 10, ipf.epsilon = .1)
