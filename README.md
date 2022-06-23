@@ -2,7 +2,9 @@
 New version of synthpop with catall and ipf having options for differential privacy
 For general synthpop info go to CRAN or to www,synthpop.org.uk
 To read papar about this go to https://arxiv.org/abs/2206.01362
-Here is some R code to get you started
+Here is some R code to get you started.
+
+
 #########################################################
 library(synthpop)
 test <- SD2011[,c("sex","agegr","socprof","marital")]
